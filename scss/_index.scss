@@ -1,0 +1,83 @@
+.articleAside{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+// Estilos del cuadro de Método de Pagos
+.metodoPago{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;       
+}
+
+.clipped{
+    color: $gris;
+    font-size: medium;
+}
+
+.tituloMedioPago{
+    padding-left: 50%;
+}
+
+.sectioMetodoPago{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+// Estilos del section de Suscribirse
+
+.loyalty-buylevel6{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.loyalty-buylevel6__wrapper {
+    margin: 0 0 0 10px;
+    width: 1180px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+section>.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.loyalty-buylevel6__header {
+    padding: 16px 24px;
+    color: #fff;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    background: -webkit-linear-gradient(left,$gris 55%,$rojo);
+    background: linear-gradient(90deg,$gris 55%,$rojo);
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.loyalty-buylevel6__body {
+    padding: 24px;
+}
+
+.loyalty-buylevel6__action {
+    border-top: 1px solid #ededed;
+    padding: 16px 30px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.andes-button__content{
+    color: $rojo;
+}
+.andes-button__content:hover{
+    color: $gris;
+}

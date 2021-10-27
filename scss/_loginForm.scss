@@ -1,0 +1,85 @@
+.pieDePagina{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.pieDePagina__posicionFormInicio{
+    display: flex;
+    justify-content: center;
+}
+
+// Formato del form del Login de inicio
+
+.pieDePagina__fieldLogin{
+        width: 100%;
+        margin-left: 600px;
+        margin-right: 600px;
+}
+
+input{
+    cursor: pointer;
+    color: #fffefe;
+    font-size: medium;
+    border-radius: 10px;
+    border-color: $gris !important;
+    width: 100%;       
+}
+
+
+fieldset{    
+    border:2px solid $gris !important;
+    border-radius: 10px !important;
+    margin: 2rem !important;
+    legend{
+        color: $gris;
+        font-size: 20px;
+        font-weight: 1000;
+        margin-top: 2rem;
+        font-family: 'Nunito', sans-serif;  
+    }
+}
+
+.formControl{    
+    width:97.5%;
+    height:50px;
+    border:none;
+    padding:5px 7px 5px 15px;
+    background:#fffefe;
+    color:$gris;
+    border-radius: 10px;
+    border:2px solid #e63946;
+    
+}
+
+.botonLogin{    
+    background-color: $gris;
+    width:50%;
+    margin-left: 25%;
+    font-size:16px;
+    height:50px;
+    color:#fffefe;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: $gris;
+}
+
+.link{
+    text-decoration:none;
+    color:#e63946;
+    float:right;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    padding:40px 30px;
+    margin:auto;
+}
+.formGroup{
+    position: relative;
+    margin-bottom:15px;
+}

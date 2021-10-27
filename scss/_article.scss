@@ -1,0 +1,18 @@
+.ofertasDelDia{
+    display: flex;      
+    justify-content:space-evenly;
+    padding: 2rem;
+    animation: zoomInDown;  /* Animación de las ofertas */
+    animation-duration: 4s;
+}
+
+/*Formato a las imágenes de las ofertas*/
+.ofertasDelDia__imagen{  
+    border-radius: 40px;
+    width: 100%;
+}
+
+
+.imgCarusel{
+    border-radius: 20rem;
+}

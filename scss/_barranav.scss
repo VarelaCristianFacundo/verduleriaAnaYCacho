@@ -1,0 +1,79 @@
+.menuPrinc{
+    border-radius: 20px;
+    list-style: none;
+    li{
+        display: inline-block;    
+        position: relative;
+        padding: 2rem;
+        transition: all 2s;        
+        a{                
+            font-size: medium;          
+        }
+    }
+    ul{
+        position: absolute;    
+        display: none;    
+        margin-left: 4rem;
+        font-size: large;        
+        background-color: transparent; 
+        border-color: transparent;
+        li{
+            display: block;        
+            a{            
+                font-size: medium;          
+            }
+        }
+    }
+}
+
+// Estilos de la barra de navegación
+
+.bordeSuperior{
+    margin-top: 2rem;
+}
+
+.bordeInferior{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.aColor{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+.aColor:hover{
+    color: #fecea8;
+}
+
+/*Formato del logo*/
+
+@keyframes logoAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    20%,80% {
+        opacity: 1;
+        transform: translateX(0);        
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100px);}
+}
+
+.logoMov{
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-play-state: initial;
+    margin-right: 4rem;
+}
+
+.coloNavBar{
+    background-color: white !important;
+}
