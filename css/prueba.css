@@ -158,7 +158,6 @@ video {
   font-size: 2rem;
   font-weight: bold;
   line-height: 2rem;
-  letter-spacing: 0.8rem;
   text-align: center;
   margin: 3rem;
   animation: fadeInUp;
@@ -170,7 +169,6 @@ video {
   font-size: 2rem;
   font-weight: bold;
   line-height: 2rem;
-  letter-spacing: 0.8rem;
   text-align: center;
   margin: 3rem;
   animation: fadeInUp;
@@ -182,7 +180,6 @@ video {
   font-size: 2rem;
   font-weight: bold;
   line-height: 2rem;
-  letter-spacing: 0.8rem;
   text-align: center;
   margin: 3rem;
   animation: fadeInUp;
@@ -191,7 +188,6 @@ video {
 .pNosotros4 {
   font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
-  text-decoration: underline;
   color: #323232;
   font-size: 2rem;
   font-weight: bold;
@@ -202,6 +198,7 @@ video {
   animation: fadeInUp;
   animation-duration: 2s; }
 
+/*Formato e imagen del encabezado*/
 .headerPadre {
   display: flex;
   justify-content: center;
@@ -470,6 +467,7 @@ iframe {
     opacity: 0;
     transform: translateX(100px); } }
 
+/*Animacion del logo*/
 .logoMov {
   animation-name: logoAnimation;
   animation-duration: 2s;
@@ -484,6 +482,7 @@ iframe {
 .coloNavBar {
   background-color: white !important; }
 
+/*Diseño de imagen de fondo*/
 .headerDesignImg {
   justify-content: center;
   background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../multimedia/encabezado4.jpg");
@@ -496,6 +495,7 @@ iframe {
   font-family: 'Nunito', sans-serif;
   padding-bottom: 10rem; }
 
+/*Animacion y ubicacion del titulo*/
 .headerDesignImg__tituloUbicacion {
   display: flex;
   justify-content: flex-start;
