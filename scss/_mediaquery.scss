@@ -8,7 +8,7 @@
     .barraNavegacion{
         padding-right: 10rem;
         padding-left: 2rem;
-    }    
+    } 
 }
 
 @media only screen and (max-width: 767px)
@@ -27,6 +27,10 @@
 /* Estilos Modo Tablet */
 @media only screen and (max-width: 768px)
 {
+    .sizeMetodoPago{
+        
+        font-size: medium;
+    }
     .bodyNotFound{
         padding: 50px;
     }
@@ -80,20 +84,48 @@
 }
 
 /* Estilos Modo Celular */
-@media only screen and (max-width: 320px)
+@media only screen and (max-width: 425px)
 {
+    .mainMiCarrito__radioBoton{
+        font-size: small;
+    }
+    .botonMiCompra{
+        display: block;
+        
+    }
+    th{
+        font-size: small;
+    }
     .logoNotFound{
         display: none;
     }
     .titleNotFound{
         font-size: 48px;
     }
-    table{
+    section div table{
         display: none;
     }
     .sectioMetodoPago{
-        display: none;
+        padding-left: 12%;
     }
+    
+    .sizeMetodoPago{
+        padding-left: 12%;
+        font-size: small;
+    }
+
+    .metodoPago{
+        padding-left: 5%;
+    }
+
+    .imgSeparate{
+        margin-bottom: 10%;
+    }
+
+    .alinearTextoMedioPago{
+        padding-left: 26% !important;
+    }
+
     h1{
         padding-right: 2rem;
     }

@@ -322,6 +322,13 @@ header nav a:hover {
 .mainMiCarrito__estiloTablas {
   width: 100px; }
 
+.botonMiCompra {
+  display: none; }
+
+.BotonCompraClase {
+  padding-left: 25%;
+  padding-right: 25%; }
+
 /*Formato a formulario*/
 .mainMiCarrito__formPadre {
   display: flex;
@@ -375,13 +382,13 @@ header nav a:hover {
 
 /*Formato de las tablas*/
 table {
-  border-spacing: 1rem;
+  border-spacing: 5%;
   border-radius: 10px;
-  text-align: center; }
+  text-align: center;
+  border-collapse: separate; }
   table tr th {
     background-color: #323232;
     color: #fffefe;
-    border-radius: 10px;
     font-size: 2rem;
     width: 25%; }
   table tr td {
@@ -524,6 +531,8 @@ iframe {
 
 /* Estilos Modo Tablet */
 @media only screen and (max-width: 768px) {
+  .sizeMetodoPago {
+    font-size: medium; }
   .bodyNotFound {
     padding: 50px; }
   .seccionTablas {
@@ -557,15 +566,30 @@ iframe {
     background-position: fixed; } }
 
 /* Estilos Modo Celular */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
+  .mainMiCarrito__radioBoton {
+    font-size: small; }
+  .botonMiCompra {
+    display: block; }
+  th {
+    font-size: small; }
   .logoNotFound {
     display: none; }
   .titleNotFound {
     font-size: 48px; }
-  table {
+  section div table {
     display: none; }
   .sectioMetodoPago {
-    display: none; }
+    padding-left: 12%; }
+  .sizeMetodoPago {
+    padding-left: 12%;
+    font-size: small; }
+  .metodoPago {
+    padding-left: 5%; }
+  .imgSeparate {
+    margin-bottom: 10%; }
+  .alinearTextoMedioPago {
+    padding-left: 26% !important; }
   h1 {
     padding-right: 2rem; }
   .labelSize {
@@ -645,6 +669,10 @@ iframe {
   justify-content: flex-end;
   padding: 2rem; }
 
+.sizeMetodoPago {
+  padding-left: 12%;
+  font-size: medium; }
+
 .metodoPago {
   display: flex;
   justify-content: space-evenly;
@@ -653,6 +681,16 @@ iframe {
 .clipped {
   color: #323232;
   font-size: medium; }
+
+.imgMedioPago {
+  justify-content: center;
+  align-items: center;
+  padding: 25%; }
+
+.alinearTextoMedioPago {
+  align-items: center;
+  justify-content: center;
+  padding-left: 25%; }
 
 .tituloMedioPago {
   padding-left: 50%; }

@@ -94,8 +94,13 @@
                 <li class="breadcrumb-item active" aria-current="page">Mi Carrito</li>
             </ol>
         </nav> 
-        <section class="container">
             <!-- Sección de la página -->
+        <section class="container">            
+            <div class="BotonCompraClase">
+                <a href="#" class="btn btn-dark botonMiCompra" data-bs-toggle="modal" data-bs-target="#exampleModal">Mostrar Mi
+                Carrito</a>
+            </div>
+        
             <div class="row seccionTablas">
                 <table class="col-lg-5" cellpadding="8" cellspacing="6">
                     <!-- Títulos de la tabla -->
@@ -103,7 +108,6 @@
                         <th>Nombre</th>
                         <th>Precio</th>
                         <th>Imagen</th>
-                        <th>Cantidad</th>
                     </tr>
 
                     <tr>
@@ -114,7 +118,6 @@
                             <img class="mainMiCarrito__estiloTablas" src="../multimedia/verduras/tomate.jpg"
                                 alt="Tomate a domicilio">
                         </td>
-                        <td>1 KG</td>
                     </tr>
 
                     <tr>
@@ -125,7 +128,6 @@
                             <img class="mainMiCarrito__estiloTablas" src="../multimedia/verduras/zanahoria.jpg"
                                 alt="Zanahoria a domicilio">
                         </td>
-                        <td>1 KG</td>
                     </tr>
                 </table>
                 <!-- Sección de la página -->
@@ -136,7 +138,6 @@
                         <th>Nombre</th>
                         <th>Precio</th>
                         <th>Imagen</th>
-                        <th>Cantidad</th>
                     </tr>
 
                     <tr>
@@ -147,7 +148,6 @@
                             <img class="mainMiCarrito__estiloTablas" src="../multimedia/verduras/morrones.jpg"
                                 alt="Morrones a domicilio">
                         </td>
-                        <td>2 KG</td>
 
                     </tr>
 
@@ -159,7 +159,6 @@
                             <img class="mainMiCarrito__estiloTablas" src="../multimedia/verduras/berenjena.jpg"
                                 alt="Berenjena a domicilio">
                         </td>
-                        <td>1 KG</td>
                     </tr>
                 </table>
             </div>
@@ -207,6 +206,82 @@
                 </div>
             </form>
         </section>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Gracias por su Compra !</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body modalTable">
+                        <table class="col-lg-5" cellpadding="8" cellspacing="6">
+                            <!-- Títulos de la tabla -->
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Imagen</th>
+                            </tr>
+        
+                            <tr>
+                                <!-- Info de la tabla 1 -->
+                                <td>Tomate</td>
+                                <td>$ 20</td>
+                                <td>
+                                    <img class="mainMiCarrito__estiloTablas" src="../multimedia/verduras/tomate.jpg"
+                                        alt="Tomate a domicilio">
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <!-- Info de la tabla 2 -->
+                                <td>Zanahoria</td>
+                                <td>$ 50</td>
+                                <td>
+                                    <img class="mainMiCarrito__estiloTablas" src="../multimedia/verduras/zanahoria.jpg"
+                                        alt="Zanahoria a domicilio">
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- Sección de la página -->
+                        <div class="col-lg-2"></div>
+                        <table class="col-lg-5" cellpadding="8" cellspacing="6">
+                            <!-- Títulos de la tabla -->
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Imagen</th>
+                            </tr>
+        
+                            <tr>
+                                <!-- Info de la tabla 1 -->
+                                <td>Morrones</td>
+                                <td>$ 200</td>
+                                <td>
+                                    <img class="mainMiCarrito__estiloTablas" src="../multimedia/verduras/morrones.jpg"
+                                        alt="Morrones a domicilio">
+                                </td>        
+                            </tr>
+        
+                            <tr>
+                                <!-- Info de la tabla 2 -->
+                                <td>Berenjena</td>
+                                <td>$ 50</td>
+                                <td>
+                                    <img class="mainMiCarrito__estiloTablas" src="../multimedia/verduras/berenjena.jpg"
+                                        alt="Berenjena a domicilio">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Seguir Comprando</button>
+                        <a href="../pages/micarrito.html"><button type="button" class="btn btn-success">Ir al carrito
+                                <i class="bi-cart-fill me-1"></i>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer-->
