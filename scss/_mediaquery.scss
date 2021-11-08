@@ -86,12 +86,15 @@
 /* Estilos Modo Celular */
 @media only screen and (max-width: 425px)
 {
+    h2{
+        margin-right: 25% !important;
+    }
     .mainMiCarrito__radioBoton{
         font-size: small;
     }
     .botonMiCompra{
         display: block;
-        
+
     }
     th{
         font-size: small;
@@ -110,12 +113,7 @@
     }
     
     .sizeMetodoPago{
-        padding-left: 12%;
         font-size: small;
-    }
-
-    .metodoPago{
-        padding-left: 5%;
     }
 
     .imgSeparate{
