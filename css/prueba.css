@@ -431,8 +431,7 @@ iframe {
     display: inline-block;
     position: relative;
     padding: 2rem;
-    transition: all 2s;
-    transition-delay: 1s; }
+    transition: all 2s; }
     .menuPrinc li a {
       font-size: medium; }
   .menuPrinc ul {
