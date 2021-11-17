@@ -189,7 +189,7 @@ video {
   font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
   color: #323232;
-  font-size: 20pt;
+  font-size: 19pt;
   font-weight: bold;
   line-height: 2rem;
   letter-spacing: 0.8rem;
@@ -435,6 +435,8 @@ iframe {
     .menuPrinc li a {
       font-size: medium; }
   .menuPrinc ul {
+    animation: slideInLeft;
+    animation-duration: 1s;
     position: absolute;
     display: none;
     margin-left: 4rem;
@@ -573,6 +575,8 @@ iframe {
 
 /* Estilos Modo Celular */
 @media only screen and (max-width: 425px) {
+  .titleIndex {
+    padding-right: 10%; }
   .desaparecerEspacio {
     display: none; }
   .mainMiCarrito__radioBoton {
@@ -588,7 +592,7 @@ iframe {
   section div table {
     display: none; }
   .sectioMetodoPago {
-    padding-left: 12%; }
+    padding-left: 10%; }
   .sizeMetodoPago {
     font-size: small; }
   .imgSeparate {
@@ -617,8 +621,6 @@ iframe {
   .generalBody {
     display: flex;
     flex-direction: column; }
-  a {
-    font-size: large; }
   .padreLogoCarrito {
     width: 60%; }
   .miCarrito {
@@ -678,6 +680,9 @@ iframe {
   padding-left: 19%;
   font-size: medium;
   padding-bottom: 20%; }
+
+.paddingContainer {
+  padding-left: 0% !important; }
 
 .metodoPago {
   display: flex;

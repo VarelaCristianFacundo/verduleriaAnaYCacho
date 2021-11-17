@@ -11,6 +11,8 @@
         }
     }
     ul{
+        animation: slideInLeft;
+        animation-duration: 1s;
         position: absolute;    
         display: none;    
         margin-left: 4rem;

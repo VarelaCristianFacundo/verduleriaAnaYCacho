@@ -84,6 +84,10 @@
 /* Estilos Modo Celular */
 @media only screen and (max-width: 425px)
 {
+    
+    .titleIndex{
+        padding-right: 10%;
+    }
     .desaparecerEspacio{
         display: none;
     }
@@ -107,7 +111,7 @@
         display: none;
     }
     .sectioMetodoPago{
-        padding-left: 12%;
+        padding-left: 10%;
     }
     
     .sizeMetodoPago{
@@ -152,9 +156,6 @@
     .generalBody{
         display: flex;
         flex-direction: column;        
-    }
-    a{
-        font-size: large;
     }
     .padreLogoCarrito{
         width: 60%;
