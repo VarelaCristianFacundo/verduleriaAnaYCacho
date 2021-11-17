@@ -28,7 +28,6 @@
 @media only screen and (max-width: 768px)
 {
     .sizeMetodoPago{
-        
         font-size: medium;
     }
     .bodyNotFound{
@@ -36,7 +35,6 @@
     }
     .seccionTablas{
         padding-top: 4rem;
-        padding-left: 5rem !important;
         justify-content: center;
         width: 100%;
     }
@@ -86,8 +84,8 @@
 /* Estilos Modo Celular */
 @media only screen and (max-width: 425px)
 {
-    h2{
-        margin-right: 25% !important;
+    .desaparecerEspacio{
+        display: none;
     }
     .mainMiCarrito__radioBoton{
         font-size: small;
@@ -121,7 +119,7 @@
     }
 
     .alinearTextoMedioPago{
-        padding-left: 26% !important;
+        padding-left: 30% !important;
     }
 
     h1{

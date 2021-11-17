@@ -5,7 +5,7 @@
 }
 // Estilos del cuadro de Método de Pagos
 .sizeMetodoPago{
-        padding-left: 12%;
+        padding-left: 19%;
         font-size: medium;
         padding-bottom: 20%;
 }
@@ -23,10 +23,13 @@
     align-items: center;
     padding: 25%;
 }
+img, svg{
+    width: 30%;
+}
 .alinearTextoMedioPago{
     align-items: center;
     justify-content: center;
-    padding-left: 25%;
+    padding-left: 35%;
 }
 .tituloMedioPago{
     padding-left: 50%;
@@ -39,7 +42,6 @@
 // Estilos del section de Suscribirse
 
 .loyalty-buylevel6{
-    padding-left: 1rem;
     padding-right: 1rem;
 }
 
@@ -73,6 +75,23 @@ section>.container {
 
 .loyalty-buylevel6__body {
     padding: 24px;
+}
+
+.loyalty-buylevel6__body-benefit-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loyalty-buylevel6__body-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loyalty-buylevel6__body-benefit-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .loyalty-buylevel6__action {

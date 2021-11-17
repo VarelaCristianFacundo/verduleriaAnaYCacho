@@ -70,6 +70,7 @@ fieldset {
     font-size: 20px;
     font-weight: 1000;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     font-family: 'Nunito', sans-serif; }
 
 .formControl {
@@ -154,42 +155,41 @@ video {
 /*Formato y Animación a párrafo*/
 .pNosotros {
   color: #323232;
-  font-family: 'Nunito', sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 2rem;
+  font-style: italic;
+  font-size: 13pt;
+  line-height: 30pt;
   text-align: center;
   margin: 3rem;
   animation: fadeInUp;
   animation-duration: 2s; }
 
 .pNosotros2 {
-  color: #520f0f;
-  font-family: 'Nunito', sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 2rem;
+  color: #323232;
+  font-style: italic;
+  font-size: 14pt;
+  line-height: 30pt;
   text-align: center;
   margin: 3rem;
   animation: fadeInUp;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  font-weight: bold; }
 
 .pNosotros3 {
-  font-family: 'Nunito', sans-serif;
-  color: #8f0303;
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 2rem;
+  color: #323232;
+  font-style: italic;
+  font-size: 16pt;
+  line-height: 30pt;
   text-align: center;
   margin: 3rem;
   animation: fadeInUp;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  font-weight: bold; }
 
 .pNosotros4 {
   font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
   color: #323232;
-  font-size: 2rem;
+  font-size: 20pt;
   font-weight: bold;
   line-height: 2rem;
   letter-spacing: 0.8rem;
@@ -313,8 +313,15 @@ header nav a:hover {
   animation: heartBeat;
   animation-duration: 1s; }
 
+.titleProd {
+  padding-left: 0% !important; }
+
 .mainMiCarrito__seccion {
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.estiloRadios {
+  margin-bottom: 2rem; }
 
 .mainMiCarrito__estiloTablas {
   width: 100px; }
@@ -375,8 +382,7 @@ header nav a:hover {
   color: #fffefe;
   font-size: medium;
   border-radius: 10px;
-  border-color: #e63946;
-  margin: 1rem; }
+  border-color: #e63946; }
 
 /*Formato de las tablas*/
 table {
@@ -425,7 +431,8 @@ iframe {
     display: inline-block;
     position: relative;
     padding: 2rem;
-    transition: all 2s; }
+    transition: all 2s;
+    transition-delay: 1s; }
     .menuPrinc li a {
       font-size: medium; }
   .menuPrinc ul {
@@ -538,7 +545,6 @@ iframe {
     padding: 50px; }
   .seccionTablas {
     padding-top: 4rem;
-    padding-left: 5rem !important;
     justify-content: center;
     width: 100%; }
   .ofertasDelDia {
@@ -568,8 +574,8 @@ iframe {
 
 /* Estilos Modo Celular */
 @media only screen and (max-width: 425px) {
-  h2 {
-    margin-right: 25% !important; }
+  .desaparecerEspacio {
+    display: none; }
   .mainMiCarrito__radioBoton {
     font-size: small; }
   .botonMiCompra {
@@ -589,7 +595,7 @@ iframe {
   .imgSeparate {
     margin-bottom: 10%; }
   .alinearTextoMedioPago {
-    padding-left: 26% !important; }
+    padding-left: 30% !important; }
   h1 {
     padding-right: 2rem; }
   .labelSize {
@@ -670,7 +676,7 @@ iframe {
   padding: 2rem; }
 
 .sizeMetodoPago {
-  padding-left: 12%;
+  padding-left: 19%;
   font-size: medium;
   padding-bottom: 20%; }
 
@@ -688,10 +694,13 @@ iframe {
   align-items: center;
   padding: 25%; }
 
+img, svg {
+  width: 30%; }
+
 .alinearTextoMedioPago {
   align-items: center;
   justify-content: center;
-  padding-left: 25%; }
+  padding-left: 35%; }
 
 .tituloMedioPago {
   padding-left: 50%; }
@@ -701,7 +710,6 @@ iframe {
   padding-bottom: 5rem; }
 
 .loyalty-buylevel6 {
-  padding-left: 1rem;
   padding-right: 1rem; }
 
 .loyalty-buylevel6__wrapper {
@@ -731,6 +739,21 @@ section > .container {
 
 .loyalty-buylevel6__body {
   padding: 24px; }
+
+.loyalty-buylevel6__body-benefit-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.loyalty-buylevel6__body-title {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.loyalty-buylevel6__body-benefit-text {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .loyalty-buylevel6__action {
   border-top: 1px solid #ededed;
@@ -813,10 +836,7 @@ form div {
 /*Animación a input de Valoración*/
 .inputValoracion {
   transition: all 2s;
-  width: 90%; }
-
-.inputValoracion:focus {
-  width: 95%; }
+  width: 100%; }
 
 /*Animación de TextArea, modificado de Bootstrap*/
 .labelSize {

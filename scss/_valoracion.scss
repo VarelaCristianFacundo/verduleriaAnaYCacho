@@ -58,11 +58,7 @@ form div{
 /*Animación a input de Valoración*/
 .inputValoracion{
     transition: all 2s;
-    width: 90%;
-}
-
-.inputValoracion:focus{
-    width: 95%;
+    width: 100%;
 }
 
 /*Animación de TextArea, modificado de Bootstrap*/

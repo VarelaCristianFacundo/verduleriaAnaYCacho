@@ -5,7 +5,8 @@
         display: inline-block;    
         position: relative;
         padding: 2rem;
-        transition: all 2s;        
+        transition: all 2s;  
+        transition-delay: 1s;      
         a{                
             font-size: medium;          
         }
