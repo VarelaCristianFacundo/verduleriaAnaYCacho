@@ -1,3 +1,5 @@
+// Barra de navegación
+
 .menuPrinc{
     border-radius: 20px;
     list-style: none;
@@ -11,6 +13,7 @@
         }
     }
     ul{
+        // Animación de menú desplegable, dentro de barra de navegación
         animation: slideInLeft;
         animation-duration: 1s;
         position: absolute;    
@@ -33,10 +36,8 @@
 .bordeSuperior{
     margin-top: 2rem;
 }
-
-.bordeInferior{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+.coloNavBar{
+    background-color: white !important;
 }
 
 .aColor{
@@ -48,7 +49,7 @@
     color: #fecea8;
 }
 
-/*Formato del logo*/
+/* Estilos del logo */
 
 @keyframes logoAnimation {
     0% {
@@ -76,6 +77,3 @@
     margin-right: 4rem;
 }
 
-.coloNavBar{
-    background-color: white !important;
-}

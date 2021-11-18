@@ -11,6 +11,7 @@ $crema: #f4e5c2;
 $blue: blue;
 $yellow: yellow;
 
+// For para darle estilos a los titles
 @for $i from 1 to 3 {
     h#{$i}{
         font-size: 2em / $i !important;
@@ -18,7 +19,7 @@ $yellow: yellow;
 }
 
 $colors: ("cancelar": $rojo, "aceptar": $gris);
-
+// each para definir colores con .bg-
 @each $name, $color in $colors {
   .bg-#{$name} {
     background-color: $color;

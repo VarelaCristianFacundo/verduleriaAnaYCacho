@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-/*Formato del título de FRUTAS Y VERDURAS*/
+/* Estilo del título de FRUTAS Y VERDURAS */
 .mainFyv__titulo{
     display: inline-block;
     margin: 0 0.5rem;
@@ -12,26 +12,25 @@
 }
 
 
-/*Formato a Secciones de Frutas y Verduras*/
+/* Estilos a Secciones de Frutas y Verduras */
 .mainFyv__seccion{
     display: flex;
     justify-content: center;
 }
-
 .mainFyv__estiloTablas{
     width: 100px;    
 }
-
 .mainFyv__cantidadFyv{
     width: 7rem;
 }
 
-/*Animación a botones de la tabla*/
+/* Animación a botones de la tabla */
 .mainFyv__botonesAnimacion:focus{
     animation: heartBeat; 
     animation-duration: 1s; 
 }
 
+// Remuevo el padding para que se centre el título
 .titleProd{
     padding-left: 0% !important;
 }

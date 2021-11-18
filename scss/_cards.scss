@@ -1,14 +1,13 @@
-/*Formato de los cards con los Productos*/
+/* Formato de los cards con los Productos */
 .cardsOtrosProductos{
     justify-content:space-evenly;
 }
+.sectionCards{
+    padding: 2%;
+}
 
-/*Formato de los títulos dentro del card*/
+/* Formato de los títulos dentro del card */
 .titulosCards{
     text-align: center;
     font-size: large;
-}
-
-.sectionCards{
-    padding: 2%;
 }
