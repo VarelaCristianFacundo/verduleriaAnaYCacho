@@ -1,5 +1,6 @@
 const bordeSuperior = document.getElementById("bordeSuperior");
 const bordeInferior = document.getElementById("bordeInferior");
+let edadVerificada = false;
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () { myFunction() };
