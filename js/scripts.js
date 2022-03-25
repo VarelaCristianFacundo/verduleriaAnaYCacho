@@ -15,13 +15,13 @@ function myFunction() {
     if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
         header.classList.add("bg-dark")
-        bordeInferior.classList.add("stickyDropDown");
-        bordeSuperior.classList.add("stickyDropDown");
+        bordeInferior.classList.add("bg-dark");
+        bordeSuperior.classList.add("bg-dark");
     } else {
         header.classList.remove("sticky");
         header.classList.remove("bg-dark");
-        bordeInferior.classList.remove("stickyDropDown");
-        bordeSuperior.classList.remove("stickyDropDown");
+        bordeInferior.classList.remove("bg-dark");
+        bordeSuperior.classList.remove("bg-dark");
     }
 }
 
