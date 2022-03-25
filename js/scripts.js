@@ -5,6 +5,7 @@ let edadVerificada = false;
 // contador de carrito
 const contCarrito = document.getElementById("numCarrito");
 const miCarrito = JSON.parse(localStorage.getItem("productosCarrito"));
+console.log(contCarrito);
 
 contCarrito.textContent = miCarrito?.length || 0;
 
