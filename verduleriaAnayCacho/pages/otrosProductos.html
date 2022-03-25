@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Palabras clave -->
+    <meta name="keywords" content="verduleria, verduras, frutas, vitamina, ensalada, estacion, fruteria">
+    <!-- Descripción en la busqueda de google -->
+    <meta name="description"
+        content="Las mejores ofertas de frutas y verduras de Buenos Aires.. Encontranos en Alsina, Lanus">
+    <title>Verdulería Ana y Cacho - Almacen</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../multimedia/icono3.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Formatos de letra de GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Formatos de animaciones animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Formatos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="../css/styles.css" rel="stylesheet" />
+
+    <!-- Estilos de la web -->
+    <link rel="stylesheet" href="../css/prueba.css">
+
+</head>
+
+
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <div class="headerDesignImg">
+            <nav class="barraNavegacion navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Logo -->
+                    <div class="logoMov col-lg-3 col-md-5">
+                        <a href="../index.html">
+                            <img class="logo2" src="../multimedia/logopng.png" alt="Logo Verdulería Ana y Cacho">
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler col-lg-2 col-md-1 coloNavBar" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Menu Hamburguesa -->
+                    <div class="collapse navbar-collapse col-lg-9 col-md-6" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 menuPrinc">
+                            <li><a class="aColor" href="../index.html">Inicio</a></li>
+                            <li><a class="aColor" href="../pages/promociones.html">Promociones</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="aColor dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Nuestros Productos</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="bordeSuperior"><a class="aColor"
+                                            href="../pages/otrosProductos.html">Almacen</a></li>
+                                    <li class="bordeInferior"><a class="aColor" href="../pages/fyv.html">Frutas y
+                                            Verduras</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="aColor" href="../pages/valoracion.html">Valoración</a></li>
+                            <li><a class="aColor" href="../pages/nosotros.html">Nosotros</a></li>
+                        </ul>
+                        <div>
+                            <a href="../pages/micarrito.html">
+                                <button class="btn btn-outline-light botonCarrito" type="button">
+                                    <i class="bi-cart-fill me-1"></i>
+                                    Mi Carrito
+                                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <!-- Título de la página -->
+            <div class="container">
+                <div class="headerDesignImg__tituloUbicacion row">
+                    <div class="col-12">
+                        <h1 class="headerDesignImg__titulo">Almacén y bebidas</h1>
+                    </div>
+                </div>
+            </div>
+    </header>
+    </div>
+
+    <main>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="aBreacrumb" href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a class="aBreacrumb" href="../pages/promociones.html">Promociones</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Otros productos</li>
+            </ol>
+        </nav>
+        <div class="container titleProd">
+            <h2>Productos de supermercado</h2>
+        </div>
+        <!-- Cards con los productos y boton Modal para agregar al carrito -->
+        <section class="container-fluid sectionCards">
+            <div class="row cardsOtrosProductos">
+                <div class="card col-lg-2 col-md-5">
+                    <img src="../multimedia/otrosProductos/harina450.jpg" class="card-img-top" alt="Oferta de Harina">
+                    <div class="card-body titulosCards">
+                        <h3 class="card-title titulosCards">Harina</h3>
+                        <span class="text-muted text-decoration-line-through">$300.00</span>
+                        <h5 class="card-text titulosCards">$200.00</h5>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
+                            al Carrito</a>
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-5">
+                    <img src="../multimedia/otrosProductos/aceite450.jpg" class="card-img-top" alt="Oferta de Aceite">
+                    <div class="card-body titulosCards">
+                        <h3 class="card-title titulosCards">Aceite</h3>
+                        <span class="text-muted text-decoration-line-through">$500.00</span>
+                        <h5 class="card-text titulosCards">$400.00</h5>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
+                            al Carrito</a>
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-5">
+                    <img src="../multimedia/otrosProductos/aceiteOliva450.jpg" class="card-img-top"
+                        alt="Oferta de Aceite de Oliva">
+                    <div class="card-body titulosCards">
+                        <h3 class="card-title titulosCards">Aceite de Oliva</h3>
+                        <span class="text-muted text-decoration-line-through">$1000.00</span>
+                        <h5 class="card-text titulosCards">$800.00</h5>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
+                            al Carrito</a>
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-5">
+                    <img src="../multimedia/otrosProductos/detergente450.jpg" class="card-img-top"
+                        alt="Oferta de Detergente">
+                    <div class="card-body titulosCards">
+                        <h3 class="card-title titulosCards">Detergente</h3>
+                        <span class="text-muted text-decoration-line-through">$340.00</span>
+                        <h5 class="card-text titulosCards">$280.00</h5>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
+                            al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <br class="desaparecerEspacio">
+            <br class="desaparecerEspacio">
+            <div class="row cardsOtrosProductos">
+                <div class="card col-lg-2 col-md-5 cardsOtrosProductos">
+                    <img src="../multimedia/otrosProductos/jugo450.jpg" class="card-img-top" alt="Oferta de Jugo">
+                    <div class="card-body titulosCards">
+                        <h3 class="card-title titulosCards">Jugo Cepita</h3>
+                        <span class="text-muted text-decoration-line-through">$100.00</span>
+                        <h5 class="card-text titulosCards">$80.00</h5>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
+                            al Carrito</a>
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-5 cardsOtrosProductos">
+                    <img src="../multimedia/otrosProductos/lataCoca450.jpg" class="card-img-top"
+                        alt="Oferta de Coca Cola">
+                    <div class="card-body titulosCards">
+                        <h3 class="card-title titulosCards">Lata de Coca Cola</h3>
+                        <span class="text-muted text-decoration-line-through">$90.00</span>
+                        <h5 class="card-text titulosCards">$75.00</h5>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
+                            al Carrito</a>
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-5 cardsOtrosProductos">
+                    <img src="../multimedia/otrosProductos/lavandina450.jpg" class="card-img-top"
+                        alt="Oferta de Lavandina">
+                    <div class="card-body titulosCards">
+                        <h3 class="card-title titulosCards">Lavandina</h3>
+                        <span class="text-muted text-decoration-line-through">$150.00</span>
+                        <h5 class="card-text titulosCards">$130.00</h5>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
+                            al Carrito</a>
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-5 cardsOtrosProductos">
+                    <img src="../multimedia/otrosProductos/yerba450.jpg" class="card-img-top" alt="Oferta de Yerba">
+                    <div class="card-body titulosCards">
+                        <h3 class="card-title titulosCards">Yerba</h3>
+                        <span class="text-muted text-decoration-line-through">$500.00</span>
+                        <h5 class="card-text titulosCards">$450.00</h5>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
+                            al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal para ir al carrito -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Gracias por su Compra !</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../multimedia/otrosProductos/aceite450.jpg" alt="productoElegido">
+                        El producto fue agregado al carrito.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Seguir Comprando</button>
+                        <a href="../pages/micarrito.html"><button type="button" class="btn btn-danger">Ir al carrito
+                                <i class="bi-cart-fill me-1"></i>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; 2008-2021 Verdulería Varela</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../js/scripts.js"></script>
+
+</body>
+
+</html>

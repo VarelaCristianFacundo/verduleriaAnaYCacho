@@ -30,7 +30,7 @@
     <header>
         <!-- Barra de navegación -->
         <div class="headerDesignImg">
-            <nav class="barraNavegacion navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light barraNavegacion" id="myHeader">
                 <div class="container">
                     <!-- Logo -->
                     <div class="logoMov col-lg-3 col-md-5">
@@ -51,9 +51,9 @@
                                 <a class="aColor dropdown-toggle" id="navbarDropdown" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">Nuestros Productos</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li class="bordeSuperior"><a class="aColor"
+                                    <li id="bordeSuperior" class="bordeSuperior"><a class="aColor"
                                             href="../pages/otrosProductos.html">Almacen</a></li>
-                                    <li class="bordeInferior"><a class="aColor" href="../pages/fyv.html">Frutas y
+                                    <li id="bordeInferior" class="bordeInferior"><a class="aColor" href="../pages/fyv.html">Frutas y
                                             Verduras</a></li>
                                 </ul>
                             </li>
@@ -65,7 +65,7 @@
                                 <button class="btn btn-outline-light botonCarrito" type="button">
                                     <i class="bi-cart-fill me-1"></i>
                                     Mi Carrito
-                                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                                    <span class="badge bg-dark text-white ms-1 rounded-pill" id="numCarrito">0</span>
                                 </button>
                             </a>
                         </div>
@@ -93,121 +93,27 @@
                 <li class="breadcrumb-item active" aria-current="page">Frutas y Verduras</li>
             </ol>
         </nav>
-        <div class="container">
-            <h2>Productos de calidad</h2>
+        <div class="container">            
+                <h2>Productos de calidad</h2>
         </div>
+            
+
+
         <!-- Cards con las frutas y verduras, con modal para agregar al carrito -->
         <section class="container-fluid sectionCards">
-            <div class="row cardsOtrosProductos">
-                <div class="card col-lg-2 col-md-5">
-                    <img src="../multimedia/frutas/mandarina.jpg" class="card-img-top mainFyv__estiloTablas"
-                        alt="naranja">
-                    <div class="card-body titulosCards">
-                        <h3 class="card-title titulosCards">Mandarina</h3>
-                        <span class="text-muted text-decoration-line-through">$300.00</span>
-                        <h5 class="card-text titulosCards">$200.00</h5>
-                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
-                            al Carrito</a>
-                    </div>
-                </div>
-                <div class="card col-lg-2 col-md-5">
-                    <img src="../multimedia/frutas/manzana.jpg" class="card-img-top" alt="...">
-                    <div class="card-body titulosCards">
-                        <h3 class="card-title titulosCards">Manzana</h3>
-                        <span class="text-muted text-decoration-line-through">$500.00</span>
-                        <h5 class="card-text titulosCards">$400.00</h5>
-                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
-                            al Carrito</a>
-                    </div>
-                </div>
-                <div class="card col-lg-2 col-md-5">
-                    <img src="../multimedia/frutas/naranja.jpg" class="card-img-top" alt="...">
-                    <div class="card-body titulosCards">
-                        <h3 class="card-title titulosCards">Naranja</h3>
-                        <span class="text-muted text-decoration-line-through">$1000.00</span>
-                        <h5 class="card-text titulosCards">$800.00</h5>
-                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
-                            al Carrito</a>
-                    </div>
-                </div>
-                <div class="card col-lg-2 col-md-5">
-                    <img src="../multimedia/verduras/tomate.jpg" class="card-img-top" alt="...">
-                    <div class="card-body titulosCards">
-                        <h3 class="card-title titulosCards">Tomate</h3>
-                        <span class="text-muted text-decoration-line-through">$340.00</span>
-                        <h5 class="card-text titulosCards">$280.00</h5>
-                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
-                            al Carrito</a>
-                    </div>
-                </div>
+            <div class="col-lg-3 col-md-5 alinearBotones">
+                <!-- Botones para filtro -->
+                <input type="button" id="frutas" value="Frutas" class="btn btn-dark btn-mid">
+                </input>
+                <input type="button" id="verduras" value="Verduras" class="btn btn-dark btn-mid">
+                </input>
+                <input type="button" id="todos" value="Todos" onclick="mensajeTodos()" onkeypress="validar(event)" class="btn btn-dark btn-mid">
+                </input>
             </div>
-            <br class="desaparecerEspacio">
-            <br class="desaparecerEspacio">
-            <div class="row cardsOtrosProductos">
-                <div class="card col-lg-2 col-md-5">
-                    <img src="../multimedia/verduras/zanahoria.jpg" class="card-img-top" alt="...">
-                    <div class="card-body titulosCards">
-                        <h3 class="card-title titulosCards">Zanahoria</h3>
-                        <span class="text-muted text-decoration-line-through">$300.00</span>
-                        <h5 class="card-text titulosCards">$200.00</h5>
-                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
-                            al Carrito</a>
-                    </div>
-                </div>
-                <div class="card col-lg-2 col-md-5">
-                    <img src="../multimedia/verduras/berenjena.jpg" class="card-img-top" alt="...">
-                    <div class="card-body titulosCards">
-                        <h3 class="card-title titulosCards">Berenjena</h3>
-                        <span class="text-muted text-decoration-line-through">$500.00</span>
-                        <h5 class="card-text titulosCards">$400.00</h5>
-                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
-                            al Carrito</a>
-                    </div>
-                </div>
-                <div class="card col-lg-2 col-md-5">
-                    <img src="../multimedia/verduras/morrones.jpg" class="card-img-top" alt="...">
-                    <div class="card-body titulosCards">
-                        <h3 class="card-title titulosCards">Morrones</h3>
-                        <span class="text-muted text-decoration-line-through">$1000.00</span>
-                        <h5 class="card-text titulosCards">$800.00</h5>
-                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
-                            al Carrito</a>
-                    </div>
-                </div>
-                <div class="card col-lg-2 col-md-5">
-                    <img src="../multimedia/frutas/banana.jpg" class="card-img-top" alt="...">
-                    <div class="card-body titulosCards">
-                        <h3 class="card-title titulosCards">Banana</h3>
-                        <span class="text-muted text-decoration-line-through">$340.00</span>
-                        <h5 class="card-text titulosCards">$280.00</h5>
-                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar
-                            al Carrito</a>
-                    </div>
-                </div>
+            <div class="row cardsOtrosProductos" id="listaFyV">
             </div>
         </section>
 
-        <!-- Modal para ir al carrito -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Gracias por su Compra !</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="../multimedia/frutas/banana.jpg" alt="productoElegido">
-                        El producto fue agregado al carrito.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Seguir Comprando</button>
-                        <a href="../pages/micarrito.html"><button type="button" class="btn btn-danger">Ir al carrito
-                                <i class="bi-cart-fill me-1"></i>
-                            </button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </main>
 
@@ -222,6 +128,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="../js/scripts.js"></script>
+    <script src="../js/fyv.js"></script>
 </body>
 
 </html>

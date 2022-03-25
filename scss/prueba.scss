@@ -3,7 +3,6 @@
 @import "article";
 @import "loginForm";
 @import "nosotros";
-@import "header";
 @import "promociones";
 @import "fyv";
 @import "micarrito";
@@ -67,4 +66,25 @@ main{
 
 .aBreacrumb{
     color: black;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    height: 20%;
+    background-color: black;
+    transition: all 0.5s ease-out;
+}
+
+.barraNavegacion{
+    position: fixed !important;    
+    z-index: 300;
+}
+
+.stickyDropDown{
+    background-color: black;
+}
+
+.botonCarrito{
+    font-size: 1.8rem !important;
 }
