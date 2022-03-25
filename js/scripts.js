@@ -2,6 +2,12 @@ const bordeSuperior = document.getElementById("bordeSuperior");
 const bordeInferior = document.getElementById("bordeInferior");
 let edadVerificada = false;
 
+// contador de carrito
+const contCarrito = document.getElementById("numCarrito");
+const miCarrito = JSON.parse(localStorage.getItem("productosCarrito"));
+
+contCarrito.textContent = miCarrito?.length || 0;
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () { myFunction() };
 

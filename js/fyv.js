@@ -36,9 +36,6 @@ const botonVerduras = document.getElementById("verduras")
 // contador de carrito
 const numCarrito = document.getElementById("numCarrito");
 
-// Array para guardar los productos del carrito
-const arrayProductos = [];
-
 let contadorVeces = 0;
 
 cargarProductos (listaFyV);
@@ -119,12 +116,15 @@ function cargarProductos (miLista){
             const {nombre} = e.target.dataset;                      
             const productoSeleccionado = JSON.parse(nombre);
 
-            const prodCarrito = new ProductoCarrito(productoSeleccionado.descripcion, productoSeleccionado.descuento, productoSeleccionado.image);            
-        
+            const prodCarrito = new ProductoCarrito(productoSeleccionado.descripcion, productoSeleccionado.descuento, productoSeleccionado.image); 
+                       
+            // Array para guardar los productos del carrito
+            const arrayProductos = JSON.parse(localStorage.getItem ("productosCarrito")) || [];
+
             arrayProductos.push(prodCarrito);
             numCarrito.textContent = arrayProductos.length;
 
-            localStorage.setItem ("Productos Carrito", JSON.stringify(arrayProductos));              
+            localStorage.setItem ("productosCarrito", JSON.stringify(arrayProductos));              
             
         }
     });
