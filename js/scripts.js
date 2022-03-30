@@ -9,28 +9,18 @@ console.log(contCarrito);
 
 contCarrito.textContent = miCarrito?.length || 0;
 
+
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () { myFunction() };
 
 // Get the header
 var header = document.getElementById("myHeader");
 var usuario = document.getElementById("usuario");
-const nombreDeUsuario = "";
+var logOut = document.getElementById("ocultarLogout");
 
 
-if (localStorage.getItem("nombre") == null)
-{
-    nombreDeUsuario == "Login";
-}
-else{
-    nombreDeUsuario == localStorage.getItem("nombre");
-}
 
-usuario.insertAdjacentText ("afterbegin", nombreDeUsuario);
-
-usuario.onmouseover = openDoor;
-usuario.onmouseleave = closeDoor;
-usuario.onclick = desloguearse;
 
 function openDoor (e){
     const icono = e.target.children[0];
@@ -45,7 +35,8 @@ function closeDoor (e){
 }
 
 function desloguearse (e){
-    localStorage.removeItem("nombre");
+    logOut.classList.add("hiddenVisibility");
+    localStorage.removeItem("nombre");    
 }
 
 // Get the offset position of the navbar
@@ -65,8 +56,6 @@ function myFunction() {
         bordeSuperior.classList.remove("bg-dark");
     }
 }
-
-
 
 
 
