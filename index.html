@@ -204,7 +204,7 @@
     </main>
 
     <!-- Formulario de Login -->
-    <section class="pieDePagina">
+    <section class="pieDePagina" id="loginSection">
         <section class="container-fluid">
             <div class="row">
                 <div class="col-lg-3"></div>
@@ -215,14 +215,14 @@
                             <div class="loginForm">
                                 <div class="formGroup">
                                     <input type="text" class="formControl" placeholder="Ingrese su usuario"
-                                        id="usuario">
+                                        id="user">
                                 </div>
                                 <div class="formGroup">
                                     <input type="password" class="formControl" placeholder="Ingrese su password"
                                         id="password">
                                 </div>
                                 <a class="link" href="#">¿Olvidó su contraseña?</a>
-                                <button type="button" class="botonLogin">Log in</button>
+                                <button type="button" class="botonLogin" id="login">Log in</button>
                             </div>
                         </fieldset>
                     </div>
@@ -238,6 +238,8 @@
             <p class="m-0 text-center text-white">Copyright &copy; 2008-2021 Verdulería Varela</p>
         </div>
     </footer>
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 

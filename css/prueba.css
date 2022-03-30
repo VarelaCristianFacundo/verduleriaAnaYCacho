@@ -6,6 +6,10 @@ h1 {
 h2 {
   font-size: 1em !important; }
 
+.hiddenVisibility {
+  visibility: hidden;
+}
+
 .bg-cancelar {
   background-color: #e63946;
   border-color: #e63946;
