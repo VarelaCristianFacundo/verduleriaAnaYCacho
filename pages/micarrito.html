@@ -104,6 +104,7 @@
                         class="bi-cart-fill me-1"></i> - Mostrar Mi
                     Carrito</a>
             </div>
+            
 
             <div class="row seccionTablas">
                 <div class="col-lg-3"></div>
@@ -120,7 +121,15 @@
                     <tbody id="tabla">                                
                     </tbody>
                 </table>
-                <div class="col-lg-3"></div>
+                <div class="col-lg-3">
+                    <section class="container-fluid sectionCards">        
+                                <!-- Boton para vaciar carrito -->
+                                <button type="button" id="remover" style="padding-right: 5px !important" onclick="vaciarCarrito()" class="btn-danger"> 
+                                    <i class="bi-trash me-1"></i>Vaciar Carrito
+                                </button>
+                            
+                    </section>
+                </div>
             </div>
         </section>
 
@@ -172,6 +181,14 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body modalTable">
+                        <section class="container-fluid sectionCards">
+                            <div class="col-lg-3 col-md-5">
+                                <!-- Boton para vaciar carrito -->
+                                <button type="button" id="remover" onclick="vaciarCarrito()" class="btn-dark btn-mid">Vaciar Carrito
+                                    <i class="bi-trash me-1"></i>
+                                </button>
+                            </div>
+                        </section>
                         <table class="col-lg-5" cellpadding="8" cellspacing="6">
                             <thead>
                                 <!-- Títulos de la tabla -->
@@ -205,6 +222,8 @@
             <p class="m-0 text-center text-white">Copyright &copy; 2008-2021 Verdulería Varela</p>
         </div>
     </footer>
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

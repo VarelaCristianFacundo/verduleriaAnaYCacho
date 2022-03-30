@@ -48,8 +48,23 @@ function validar(e) {
 
 function mensajeTodos(){
     contadorVeces = contadorVeces +1;
-    if (contadorVeces == 1)    
-        alert ("Presione Enter para volver a todos los productos")    
+    if (contadorVeces == 1)  
+    {
+        Toastify({
+            text: "Presione Enter para ver todos los productos",
+            className: "info",
+            duration: 3000,
+            destination: "",
+            newWindow: true,
+            close: true,
+            gravity: "bottom",
+            position: "right",
+            style: {
+              background: "black",
+            }
+          }).showToast();
+    }
+
 }
 
 botonFrutas.onclick = () => {
@@ -125,7 +140,20 @@ function cargarProductos (miLista){
             numCarrito.textContent = arrayProductos.length;
 
             localStorage.setItem ("productosCarrito", JSON.stringify(arrayProductos));              
-            
+            Toastify({
+                text: "IR AL CARRITO",
+                className: "info",
+                duration: 3000,
+                destination: "../pages/micarrito.html",
+                newWindow: true,
+                close: true,
+                gravity: "bottom",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                  background: "linear-gradient(to right, #00b09b, #96c93d)",
+                }
+              }).showToast();
         }
     });
 }

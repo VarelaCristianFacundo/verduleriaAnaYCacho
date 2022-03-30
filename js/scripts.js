@@ -14,6 +14,29 @@ window.onscroll = function () { myFunction() };
 
 // Get the header
 var header = document.getElementById("myHeader");
+var usuario = document.getElementById("usuario");
+
+// usuario.insertAdjacentText ("afterbegin", localStorage.getItem("nombre"));
+
+// usuario.onmouseover = openDoor;
+// usuario.onmouseleave = closeDoor;
+// usuario.onclick = desloguearse;
+
+function openDoor (e){
+    const icono = e.target.children[0];
+    icono.classList.remove("bi-door-closed");
+    icono.classList.add("bi-door-open");
+}
+
+function closeDoor (e){
+    const icono = e.target.children[0];
+    icono.classList.remove("bi-door-open");
+    icono.classList.add("bi-door-closed");
+}
+
+function desloguearse (e){
+    localStorage.removeItem("nombre");
+}
 
 // Get the offset position of the navbar
 var sticky = header.offsetTop;
