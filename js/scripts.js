@@ -9,18 +9,24 @@ console.log(contCarrito);
 
 contCarrito.textContent = miCarrito?.length || 0;
 
-const loginButton = document.getElementById("login");
-const loginSection = document.getElementById("loginSection");
-
-
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () { myFunction() };
 
 // Get the header
 var header = document.getElementById("myHeader");
 var usuario = document.getElementById("usuario");
+const nombreDeUsuario = "";
 
-usuario.insertAdjacentText ("afterbegin", localStorage.getItem("nombre"));
+
+if (localStorage.getItem("nombre") == null)
+{
+    nombreDeUsuario == "Login";
+}
+else{
+    nombreDeUsuario == localStorage.getItem("nombre");
+}
+
+usuario.insertAdjacentText ("afterbegin", nombreDeUsuario);
 
 usuario.onmouseover = openDoor;
 usuario.onmouseleave = closeDoor;
@@ -61,27 +67,7 @@ function myFunction() {
 }
 
 
-loginButton.onclick = () => {
-    const nombreUsuario = document.getElementById("user").value;
-    const passwordUsuario = document.getElementById("password").value;    
-    
-    if (passwordUsuario == "varela"){
-        loginSection.classList.add("hiddenVisibility");
-        localStorage.setItem("nombre", nombreUsuario);
-        swal({
-            title: "Bienvenido !",
-            text: "Las mejores ofertas por estar suscripto!",
-            icon: "success",
-            button: "Acceder a la tienda"
-        }).then(function() {
-            window.location = "./pages/fyv.html";
-        });
-    }
-    else{
 
-    }
-    
-}
 
 
 // if (localStorage.getItem("nombre") == null) {
