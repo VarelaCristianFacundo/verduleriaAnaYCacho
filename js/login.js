@@ -11,7 +11,7 @@ loginButton.onclick = () => {
         swal({
             title: "Bienvenido !",
             text: "Las mejores ofertas por estar suscripto!",
-            icon: "success",
+            icon: false,
             button: "Acceder a la tienda"
         }).then(function() {
             window.location = "./pages/fyv.html";

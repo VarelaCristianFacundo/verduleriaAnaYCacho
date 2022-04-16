@@ -155,7 +155,7 @@ function cargarProductos (miLista){
             localStorage.setItem ("productosCarrito", JSON.stringify(arrayProductos));              
             Toastify({
                 text: "IR AL CARRITO",
-                className: "info",
+                className: "success",
                 duration: 3000,
                 destination: "../pages/micarrito.html",
                 newWindow: true,
@@ -164,7 +164,7 @@ function cargarProductos (miLista){
                 position: "right",
                 stopOnFocus: true,
                 style: {
-                  background: "linear-gradient(to right, #00b09b, #96c93d)",
+                  background: "linear-gradient(90deg, #323232 55%, #e63946)",
                 }
               }).showToast();
         }

@@ -6,6 +6,43 @@ h1 {
 h2 {
   font-size: 1em !important; }
 
+.swal-modal{
+  background-color: #1B1A1A;
+}
+
+.swal-title{
+  color: white;
+}
+
+.swal-text{
+  color: white;
+}
+
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #1B1A1A;
+    font-size: 12px;    
+    border: 1px solid #1B1A1A;    
+}
+
+.swal-button:hover{
+  padding: 7px 19px !important;
+  border-radius: 2px !important;
+  background-color: #fff !important;
+  border: #1B1A1A !important;
+  border-color: #1B1A1A !important;
+  color: #1B1A1A !important;
+}
+
+.swal-button:focus {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #1B1A1A;
+  font-size: 12px;
+  border: 1px solid #1B1A1A;    
+}
+  
 .hiddenVisibility {
   visibility: hidden;
 }

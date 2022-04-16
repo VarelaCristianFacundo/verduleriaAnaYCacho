@@ -18,12 +18,6 @@ function cargarCarrito(id) {
                 alt="${producto.descripcion}">
         </td>
         `
-        // <td>${producto.descuento}</td>
-        // <td>
-        //     <button class="btn btnAgregar btn-dark">
-        //         <i class="bi-trash me-1" data-desc=${producto.descripcion} id="borrar"></i>
-        //     </button>
-        // </td>
 
 
         divCard.innerHTML = fila;
@@ -47,28 +41,21 @@ usuario.onclick = desloguearse;
 
 var borrar = document.getElementById("borrar");
 
-// usuario.insertAdjacentText ("afterbegin", localStorage.getItem("nombre"));
-
-// usuario.onmouseover = openDoor;
-// usuario.onmouseleave = closeDoor;
-// borrar.onclick = sacarProducto;
-
 
 function vaciarCarrito() {
     localStorage.removeItem("productosCarrito");
     swal({
         title: "Carrito Vacio!",
         text: "Ha removido todos los productos del carrito!",
-        icon: "success",
+        icon: "info",
         button: "Gracias!",
+    }).then(function() {
+        window.location = "./fyv.html";
     });
 }
-
-
 
 function sacarProducto(e) {
     const { desc } = e.target.dataset;
     const productoSeleccionado = JSON.stringify(desc);
     console.log(productoSeleccionado);
-    // localStorage.removeItem("nombre");
 }
