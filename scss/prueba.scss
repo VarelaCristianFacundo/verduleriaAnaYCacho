@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import "variables";
+@import "article";
+@import "loginForm";
+@import "nosotros";
+@import "promociones";
+@import "fyv";
+@import "micarrito";
+@import "barranav";
+@import "headerImg";
+@import "mediaquery";
+@import "index";
+@import "cards";
+@import "valoracion";
+@import "notFound";
+
+/*---------------- Reseteo ----------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;  
+}
+.navContainer{    
+    margin-bottom: 100px;
+}
+/******************************** Estilos Generales ********************************/
+
+/*Títulos de cada página*/
+h1{ 
+    text-align: center;
+}
+
+/*SubTítulos de cada página*/
+h2{    
+    text-align: center;
+    color: $gris;
+    padding-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    animation: fadeInUp; 
+    animation-duration: 2s; 
+}
+
+/*Formato de los links*/
+a{
+    color: #fffefe;
+    text-decoration: none;
+}
+
+/*Formato del Body*/
+body{
+    display: flex;
+    flex-flow: column;
+}
+
+main{
+    display: flex;
+    flex-flow: column;    
+    justify-content:flex-end;
+}
+
+.aBreacrumb{
+    color: black;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    height: 20%;
+    background-color: black;
+    transition: all 0.5s ease-out;
+}
+
+.barraNavegacion{
+    position: fixed !important;    
+    z-index: 300;
+}
+
+.stickyDropDown{
+    background-color: black;
+}
+
+.botonCarrito{
+    font-size: 1.8rem !important;
+}

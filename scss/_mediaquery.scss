@@ -1,0 +1,242 @@
+.logo2{
+    width: 50%;
+    height: 50%;
+    margin-right: 5rem;
+}
+
+.barraNavegacion{
+    width: 100%;
+} 
+
+@media only screen and (max-width: 1024px){
+    .barraNavegacion{
+        padding-right: 10rem;
+        padding-left: 2rem;
+    } 
+}
+
+@media only screen and (max-width: 767px)
+{
+    .barraNavegacion{
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+    .logo2{
+        width: 78%;
+        padding-left: 9rem;
+        padding-bottom: 5rem;
+    }
+}
+
+/* Estilos Modo Tablet */
+@media only screen and (max-width: 768px)
+{
+    .sizeMetodoPago{
+        font-size: medium;
+    }
+    .bodyNotFound{
+        padding: 50px;
+    }
+    .seccionTablas{
+        padding-top: 4rem;
+        justify-content: center;
+        width: 100%;
+    }
+    .ofertasDelDia{
+        flex-direction: row;
+    }
+    .headerDesignImg__titulo{
+        font-size: 100%;
+    }
+    main{
+        padding: 2rem;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .padreLogoCarrito{
+        width: 100%;
+    }
+
+    .posicionFormInicio{
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuPrincipal{        
+        display: flex;
+        flex-direction: row;  
+    }
+
+    .otrosProductosH1{
+        font-size: 4rem;
+    }
+
+    a{
+        font-size: small;
+    }
+
+    .headerDesignOtrosProd{
+        background-position: fixed;
+    }
+
+}
+
+/* Estilos Modo Celular */
+@media only screen and (max-width: 425px)
+{
+    
+    .titleIndex{
+        padding-right: 10%;
+    }
+    .desaparecerEspacio{
+        display: none;
+    }
+    .mainMiCarrito__radioBoton{
+        font-size: small;
+    }
+    // Boton Modal que se utiliza para ver la tabla de tus compras
+    .botonMiCompra{
+        display: block;
+    }
+    th{
+        font-size: small;
+    }
+    .logoNotFound{
+        display: none;
+    }
+    .titleNotFound{
+        font-size: 48px;
+    }
+    section div table{
+        display: none;
+    }
+    .sectioMetodoPago{
+        padding-left: 10%;
+    }
+    
+    .sizeMetodoPago{
+        font-size: small;
+    }
+
+    .imgSeparate{
+        margin-bottom: 10%;
+    }
+
+    .alinearTextoMedioPago{
+        padding-left: 30% !important;
+    }
+
+    h1{
+        padding-right: 2rem;
+    }
+    .labelSize{
+        font-size: large;
+    }
+    .mainNosotros__nosotrosPadre{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .headerDesignImg__titulo{
+        font-size: large;
+    }
+
+    .barraNavegacion{
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+    .logo2{
+        width: 78%;
+        padding-left: 9rem;
+        padding-bottom: 5rem;
+    }
+    main{
+        padding: 2rem;        
+    }
+    .generalBody{
+        display: flex;
+        flex-direction: column;        
+    }
+    .padreLogoCarrito{
+        width: 60%;
+    }
+    .miCarrito{
+        width: 15%;
+    }
+    .carritoEstatico{        
+        padding-left: 20rem;
+    }
+    .menuPrincipal{
+        background-image: none;
+    }
+    .pieDePagina__fieldLogin{
+        width: 10%;        
+        text-align: center;
+    }
+    aside{
+        display: none;
+    }
+    article{
+        display: none;
+    }
+    .posicionFormInicio{
+        margin:10%
+    }
+
+    .tituloProductos{
+        animation: fadeInLeft;
+        animation-duration: 2s;
+        padding-top: 4rem; 
+        font-size: small;   
+    }
+
+    .logo{
+        width: 40%;
+    }
+
+    .logoModif{
+        display: none;
+    }    
+    .otrosProductosH1{
+        font-size: 2rem;
+    }
+
+    .headerDesignOtrosProd{    
+        padding-bottom: 30%;
+    }
+    .padreLogoCarritoOtrosProd{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .carritoOculto{
+        display: none;
+    }
+
+    .carritoCel{
+        display: contents;        
+    }
+
+    .carritoAbsolute{
+        display: block;
+        padding-left: 25%;        
+        position: absolute;
+    }
+
+    .widthContainer{
+        padding-top: 4rem;
+    }
+}
+
+/* Estilos Modo Celular invertido */
+@media only screen and (max-width: 757px)
+{    
+    .logoModif{
+        display: none;
+    }    
+}

@@ -1,0 +1,167 @@
+/*Formato del título de VALORACION*/
+.tituloValoracion{
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
+/*Estilo de selección de Sexo*/
+select{
+    background: $gris;
+    cursor: pointer;
+    color: #fffefe;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 100px;
+    font-family: 'Nunito', sans-serif;  
+}
+
+/*Estilo de los input a completar*/
+form div{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    label{
+        color: $gris;
+        font-family: courier;
+        font-weight:1000;
+        font-size: 2rem;
+        font-family: 'Nunito', sans-serif;  
+    }
+    input{    
+        background-color: #fffefe;
+        border-color: $gris;
+        color: $gris; 
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*Estilo de botones de Valoración*/
+.botonesValoracion{
+    color: #fffefe;
+    font-size: medium;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.divBotonesValoracion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Animación a input de Valoración*/
+.inputValoracion{
+    transition: all 2s;
+    width: 100%;
+}
+
+/*Animación de TextArea, modificado de Bootstrap*/
+.labelSize{
+    font-size: small;
+}
+.textAreaModel{
+    border-color: $gris;
+    border-radius: 20px;
+    color: $gris;    
+    font-size: 14px;
+}
+
+/*Clase de los checkbox agrupados*/
+.checkbox{    
+    border-color: #e63946;
+    border-radius: 40px;
+    color: #fffefe;   
+    text-align: center;    
+    margin: auto;
+}
+.checkbox:checked{
+    background-color: #e63946;  
+    border-color: #e63946;  
+}
+.checkbox:active{
+    border-color: #e63946;
+}
+.checkbox:focus{
+    border-color: #e63946;
+    outline: 0;
+}
+
+/*Estilo de los checkbox*/
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+/*Cuando el check es presionado, coloca Verde al checked*/
+.container input:checked ~ .checkmark {
+    background-color: #e63946;
+}
+
+/*Tilde del checkbox*/
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/*Muestro el tilde cuando es checked*/
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/*Estilo del checkmark*/
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.mainValoracion{
+    display: grid;
+    grid-template-columns: 2fr ;
+    grid-template-rows: 0.5fr 2fr;    
+    justify-items: center;
+}
+
+#valoracion{
+    padding-left: 1rem;
+}

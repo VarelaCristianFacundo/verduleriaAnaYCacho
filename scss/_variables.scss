@@ -1,0 +1,32 @@
+//colores del programa
+$rojo: #e63946;
+$verde: #295f4e;
+$blanco: #fffefe;
+$gris: #323232;
+$grisRojo1: #520f0f;
+$grisRojo2: #8f0303;
+$grisRojo3: #520f0f;
+$grisRojo4: #323232;
+$crema: #f4e5c2;
+$blue: blue;
+$yellow: yellow;
+
+// For para darle estilos a los titles
+@for $i from 1 to 3 {
+    h#{$i}{
+        font-size: 2em / $i !important;
+    }    
+}
+
+$colors: ("cancelar": $rojo, "aceptar": $gris);
+// each para definir colores con .bg-
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+    border-color: $color;
+    color: #fffefe;
+    font-size: medium;
+    border-radius: 10px;
+    width: 40%;
+  }
+}

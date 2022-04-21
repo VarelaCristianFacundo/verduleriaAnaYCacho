@@ -1,0 +1,46 @@
+.mainPromociones{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formato del título de promociones */
+.mainPromociones__titulo{
+    display: inline-block;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+    
+}
+
+.mainPromociones__ofertasPadre{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 2rem;
+}
+
+.mainPromociones__ofertasPreciosCuidados{
+    padding-bottom: 20rem;
+    width: 20%;
+    animation: zoomInDown;
+    animation-duration: 2s;
+}
+
+/*Animacion a ofertas*/
+.mainPromociones__animacionOfertasPadre:hover{
+    animation: flip;
+    animation-duration: 2s;
+}
+
+.mainPromociones__ofertasDelDia{
+    border-radius: 40px;
+    width: 100%; 
+}
+
+.carouselImg{
+    width: 100%;
+    height: 100%;
+}
+
+.pPromociones{
+    padding-top: 1rem;
+    color:$gris; 
+}
