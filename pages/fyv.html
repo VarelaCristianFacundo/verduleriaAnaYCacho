@@ -53,7 +53,8 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li id="bordeSuperior" class="bordeSuperior"><a class="aColor"
                                             href="../pages/otrosProductos.html">Almacen</a></li>
-                                    <li id="bordeInferior" class="bordeInferior"><a class="aColor" href="../pages/fyv.html">Frutas y
+                                    <li id="bordeInferior" class="bordeInferior"><a class="aColor"
+                                            href="../pages/fyv.html">Frutas y
                                             Verduras</a></li>
                                 </ul>
                             </li>
@@ -68,11 +69,11 @@
                                     <span class="badge bg-dark text-white ms-1 rounded-pill" id="numCarrito">0</span>
                                 </button>
                             </a>
-                        </div>                        
+                        </div>
                         <div style="margin-left: 5px;" id="ocultarLogout">
                             <a href="../index.html#loginSection">
-                                <button class="btn btn-outline-light botonCarrito" type="button" id="usuario">                                                         
-                                    <i class="bi bi-door-closed me-1"></i>                                    
+                                <button class="btn btn-outline-light botonCarrito" type="button" id="usuario">
+                                    <i class="bi bi-door-closed me-1"></i>
                                 </button>
                             </a>
                         </div>
@@ -100,22 +101,27 @@
                 <li class="breadcrumb-item active" aria-current="page">Frutas y Verduras</li>
             </ol>
         </nav>
-        <div class="container">            
-                <h2>Productos de calidad</h2>
+        <div class="container">
+            <h2>Productos de calidad</h2>
         </div>
-            
+
 
 
         <!-- Cards con las frutas y verduras, con modal para agregar al carrito -->
         <section class="container-fluid sectionCards">
-            <div class="col-lg-3 col-md-5 alinearBotones">
-                <!-- Botones para filtro -->
-                <input type="button" id="frutas" value="Frutas" class="btn btn-dark btn-mid">
-                </input>
-                <input type="button" id="verduras" value="Verduras" class="btn btn-dark btn-mid">
-                </input>
-                <input type="button" id="todos" value="Todos" onclick="mensajeTodos()" onkeypress="validar(event)" class="btn btn-dark btn-mid">
-                </input>
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 alinearBotones">
+                    <!-- Botones para filtro -->
+                    <input type="button" id="frutas" value="Frutas" class="btn btn-dark btn-mid">
+                    </input>
+                    <input type="button" id="verduras" value="Verduras" class="btn btn-dark btn-mid">
+                    </input>
+                    <input type="button" id="todos" value="Todos"
+                        class="btn btn-dark btn-mid">
+                    </input>
+                </div>
+                <div class="col-lg-4"></div>                
             </div>
             <div class="row cardsOtrosProductos" id="listaFyV">
             </div>

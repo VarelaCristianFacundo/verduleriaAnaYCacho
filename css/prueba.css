@@ -316,9 +316,10 @@ video {
   width: 20% !important; }
 
 .alinearBotones {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 120px; }
+}
 
 .mainMiCarrito__seccion {
   padding-top: 4rem;

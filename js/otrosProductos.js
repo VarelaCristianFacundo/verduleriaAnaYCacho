@@ -57,7 +57,6 @@ async function getProductos (){
     cargarProductos(otrosProductosApi);
     console.log(otrosProductosApi);
     // cargarProductos(otrosProductos)
-    // console.log(otrosProductos);
 }
 
 // Llamo a la función para hacer el fetch de los productos
@@ -156,7 +155,7 @@ function cargarProductos(miLista) {
                 position: "right",
                 stopOnFocus: true,
                 style: {
-                  background: "linear-gradient(90deg, #323232 55%, #e63946)",
+                  background: "linear-gradient(black, black, black)",
                 }
             }).showToast();
         }

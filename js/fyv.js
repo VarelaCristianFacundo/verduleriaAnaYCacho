@@ -32,6 +32,7 @@ const divFyV = document.getElementById("listaFyV");
 // Boton para filtro
 const botonFrutas = document.getElementById("frutas")
 const botonVerduras = document.getElementById("verduras")
+const botonTodos = document.getElementById("todos")
 
 // contador de carrito
 const numCarrito = document.getElementById("numCarrito");
@@ -59,25 +60,16 @@ function validar(e) {
         cargarProductos (listaFyV);
 }
 
-function mensajeTodos(){
-    contadorVeces = contadorVeces +1;
-    if (contadorVeces == 1)  
-    {
-        Toastify({
-            text: "Presione Enter para ver todos los productos",
-            className: "info",
-            duration: 3000,
-            destination: "",
-            newWindow: true,
-            close: true,
-            gravity: "bottom",
-            position: "right",
-            style: {
-              background: "black",
-            }
-          }).showToast();
-    }
 
+botonTodos.onclick = () => {
+    contadorVeces = 0;
+    
+    const todos = [];
+    listaFyV.map((el) => {
+        todos.push(el)
+    });
+
+    cargarProductos(todos);
 }
 
 botonFrutas.onclick = () => {
@@ -164,7 +156,7 @@ function cargarProductos (miLista){
                 position: "right",
                 stopOnFocus: true,
                 style: {
-                  background: "linear-gradient(90deg, #323232 55%, #e63946)",
+                    background: "linear-gradient(black, black, black)",
                 }
               }).showToast();
         }
